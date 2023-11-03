@@ -1,0 +1,20 @@
+function alias_value() {
+    (( $+aliases[$1] )) && echo $aliases[$1]
+}
+
+function try_alias_value() {
+    alias_value "$1" || echo "$1"
+}
+
+alias cd -="cd -"
+alias md='mkdir -p'
+alias rd=rmdir
+
+# List directory contents
+alias lsa='ls -lah'
+alias l='ls -lah'
+alias ll='ls -lh'
+alias la='ls -lAh'
+
+# Run ls after cd
+function cd { builtin cd "$@" && ls }

@@ -1,0 +1,15 @@
+[user]
+	name = Mike Key
+	email = mike@1337hero.com
+
+[github]
+  user = 1337hero
+  
+[credential]
+  helper = cache --timeout=86400
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

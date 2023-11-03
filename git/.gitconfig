@@ -1,0 +1,47 @@
+[user]
+	name = Mike Key
+	email = mike@1337hero.com
+
+[github]
+  user = 1337hero
+
+[credential]
+  helper = cache --timeout=86400
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[diff]
+  compactionHeuristic = true
+  rename = copy
+  check = true
+
+[pager]
+  color = true
+
+[init]
+  defaultBranch = main
+
+[push]
+  default = simple
+
+[pull]
+  rebase = true
+
+[commit]
+  template = ~/.gitmessage
+  verbose = true
+
+[help]
+  autocorrect = 1
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[url "ssh://git@"]
+  insteadOf = git://
