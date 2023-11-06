@@ -48,19 +48,19 @@ git_prompt() {
   fi
 }
 
+#Bullet Train Theme Options
+BULLETTRAIN_PROMPT_CHAR="%{%K{black}%}%  %{%F{white}%} ➜ %{%f%b%k%}%{%F{black}%}%{%f%b%k%}"
+BULLETTRAIN_DIR_BG=yellow
+BULLETTRAIN_DIR_FG=black
 BULLETTRAIN_PROMPT_ORDER=(
-    custom
-    context
-    dir
-    git
+  #time
+  #custom
+  #status
+  context
+  dir
+  virtualenv
+  git
 )
-
-BULLETTRAIN_PROMPT_CHAR=(
-    \➜
-)
-
-BULLETTRAIN_CUSTOM_MSG=👾
-BULLETTRAIN_CUSTOM_BG=white
 
 eval "$(rbenv init -)"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -69,6 +69,3 @@ chruby ruby-3.1.2
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
-
-alias pip=pip3
-alias python=/usr/local/bin/python3
