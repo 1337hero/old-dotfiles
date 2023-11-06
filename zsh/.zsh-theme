@@ -397,7 +397,9 @@ fi
 # ------------------------------------------------------------------------------
 
 CURRENT_BG='NONE'
+if [ ! -n "${SEGMENT_SEPARATOR+1}" ]; then
 SEGMENT_SEPARATOR=''
+fi
 
 # Begin a segment
 # Takes three arguments, background, foreground and text. All of them can be omitted,
@@ -435,7 +437,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 context() {
   local user="$(whoami)"
-  [[ "$user" != "$BULLETTRAIN_CONTEXT_DEFAULT_USER" || -n "$BULLETTRAIN_IS_SSH_CLIENT" ]] && echo -n "@${user}"
+  [[ "$user" != "$BULLETTRAIN_CONTEXT_DEFAULT_USER" || -n "$BULLETTRAIN_IS_SSH_CLIENT" ]] && echo -n "${user}@$BULLETTRAIN_CONTEXT_HOSTNAME"
 }
 
 prompt_context() {
