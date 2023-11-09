@@ -45,3 +45,5 @@
 
 [url "ssh://git@"]
   insteadOf = git://
+[core]
+	excludesfile = /Users/mikekey/dotfiles/git/.gitignore
