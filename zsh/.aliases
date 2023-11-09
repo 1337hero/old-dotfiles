@@ -39,3 +39,9 @@ alias gaa="git add -A"
 alias gc="git commit -m"
 alias gpo="git push origin"
 alias gb="git branch"
+
+alias azdev="npx @azure/static-web-apps-cli start"
+
+# Created this to list stray localhost and kill them
+alias klh="sudo lsof -i"
+alias kh="kill -9"
