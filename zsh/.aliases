@@ -45,3 +45,7 @@ alias azdev="npx @azure/static-web-apps-cli start"
 # Created this to list stray localhost and kill them
 alias klh="sudo lsof -i"
 alias kh="kill -9"
+
+alias sites="cd ~/Sites/"
+alias projects="cd ~/Projects/"
+alias dotfiles="cd ~/dotfiles/"

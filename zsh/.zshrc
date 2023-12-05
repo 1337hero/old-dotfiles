@@ -11,6 +11,7 @@ source ~/dotfiles/zsh/.safe-paste
 source ~/dotfiles/zsh/.history
 source ~/dotfiles/zsh/.zsh-git
 source ~/dotfiles/zsh/.zsh-theme
+source ~/dotfiles/zsh/.pomodoro
 
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -55,7 +56,7 @@ BULLETTRAIN_DIR_FG=black
 BULLETTRAIN_PROMPT_ORDER=(
   #time
   #custom
-  #status
+  status
   context
   dir
   virtualenv
@@ -69,3 +70,4 @@ chruby ruby-3.1.2
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
+
