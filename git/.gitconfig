@@ -1,6 +1,6 @@
 [user]
 	name = Mike Key
-	email = mike@1337hero.com
+	email = mike@mk3y.com
 
 [github]
   user = 1337hero
@@ -47,3 +47,4 @@
   insteadOf = git://
 [core]
 	excludesfile = /Users/mikekey/dotfiles/git/.gitignore
+	editor = nano

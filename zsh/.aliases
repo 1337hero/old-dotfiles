@@ -49,3 +49,7 @@ alias kh="kill -9"
 alias sites="cd ~/Sites/"
 alias projects="cd ~/Projects/"
 alias dotfiles="cd ~/dotfiles/"
+
+
+# New alias to open projects folder in VS Code
+alias vsc="code ."
