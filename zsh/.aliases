@@ -1,9 +1,9 @@
 function alias_value() {
-    (( $+aliases[$1] )) && echo $aliases[$1]
+  (( $+aliases[$1] )) && echo $aliases[$1]
 }
 
 function try_alias_value() {
-    alias_value "$1" || echo "$1"
+  alias_value "$1" || echo "$1"
 }
 
 alias c="clear"
@@ -12,8 +12,9 @@ alias r="source ~/.zshrc"
 
 alias cd -="cd -"
 alias md='mkdir -p'
-alias rd=rmdir
+alias rd='rmdir'
 
+alias home="cd ~/"
 alias sites="cd ~/Sites/"
 alias projects="cd ~/projects"
 
@@ -32,13 +33,15 @@ alias la='ls -lAh'
 function cd { builtin cd "$@" && ls }
 
 # Git Aliases
-
-alias gs="git status"
-alias ga="git add"
-alias gaa="git add -A"
-alias gc="git commit -m"
-alias gpo="git push origin"
-alias gb="git branch"
+alias g="git"
+alias gs="g status"
+alias ga="g add"
+alias gaa="g add -A"
+alias gc="g commit -m"
+alias gpo="g push origin"
+alias gb="g branch"
+alias gsw="g switch"
+alias gt="g worktree list"
 
 alias azdev="npx @azure/static-web-apps-cli start"
 

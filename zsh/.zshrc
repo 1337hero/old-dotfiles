@@ -13,6 +13,8 @@ source ~/dotfiles/zsh/.zsh-git
 source ~/dotfiles/zsh/.zsh-theme
 source ~/dotfiles/zsh/.pomodoro
 
+source ~/dotfiles/worktrees/.wt-switch
+
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
