@@ -52,14 +52,17 @@ git_prompt() {
 }
 
 #Bullet Train Theme Options
-BULLETTRAIN_PROMPT_CHAR="%{%K{black}%}%  %{%F{white}%} ➜ %{%f%b%k%}%{%F{black}%}%{%f%b%k%}"
+BULLETTRAIN_PROMPT_CHAR="%F{white}%} ➝  "
 BULLETTRAIN_DIR_BG=yellow
 BULLETTRAIN_DIR_FG=black
+BULLETTRAIN_CUSTOM_BG=cyan
+BULLETTRAIN_CUSTOM_FG=black
+BULLETTRAIN_CUSTOM_MSG=
 BULLETTRAIN_PROMPT_ORDER=(
   #time
-  #custom
+  custom
   status
-  context
+  #context
   dir
   virtualenv
   git

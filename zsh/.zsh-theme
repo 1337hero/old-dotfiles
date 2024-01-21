@@ -303,7 +303,7 @@ fi
 
 # GIT PROMPT
 if [ ! -n "${BULLETTRAIN_GIT_PREFIX+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_PREFIX="\ue0a0 "
+  ZSH_THEME_GIT_PROMPT_PREFIX="\ue0a0"
 else
   ZSH_THEME_GIT_PROMPT_PREFIX=$BULLETTRAIN_GIT_PREFIX
 fi
@@ -553,7 +553,7 @@ prompt_dir() {
 
   if [[ $BULLETTRAIN_DIR_EXTENDED == 0 ]]; then
     #short directories
-    dir="${dir}%1~"
+    dir="${dir} %1~"
   elif [[ $BULLETTRAIN_DIR_EXTENDED == 2 ]]; then
     #long directories
     dir="${dir}%0~"
@@ -721,7 +721,7 @@ prompt_chars() {
   echo -n "$bt_prompt_chars"
 
   if [[ -n $BULLETTRAIN_PROMPT_CHAR ]]; then
-    echo -n " "
+    echo -n ""
   fi
 }
 
