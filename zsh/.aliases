@@ -9,6 +9,7 @@ function try_alias_value() {
 alias c="clear"
 alias x="exit"
 alias r="source ~/.zshrc"
+alias ls="colorls"
 
 alias cd -="cd -"
 alias md='mkdir -p'
@@ -24,13 +25,11 @@ alias python=/usr/local/bin/python3
 alias bci="brew cask install"
 
 # List directory contents
-alias lsa='ls -lah'
-alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 
 # Run ls after cd
-function cd { builtin cd "$@" && ls }
+function cd { builtin cd "$@" && colorls }
 
 # Git Aliases
 alias g="git"
@@ -42,6 +41,7 @@ alias gpo="g push origin"
 alias gb="g branch"
 alias gsw="g switch"
 alias gt="g worktree list"
+alias gco="g checkout"
 
 alias azdev="npx @azure/static-web-apps-cli start"
 
@@ -49,10 +49,11 @@ alias azdev="npx @azure/static-web-apps-cli start"
 alias klh="sudo lsof -i"
 alias kh="kill -9"
 
-alias sites="cd ~/Sites/"
-alias projects="cd ~/Projects/"
-alias dotfiles="cd ~/dotfiles/"
+alias sites="cd ~/Sites/ && colorls"
+alias projects="cd ~/Projects/ && colorls"
+alias dotfiles="cd ~/dotfiles/ && colorls"
 
+alias CISS="cd  ~/Sites/CISS/ && colorls"
 
 # New alias to open projects folder in VS Code
 alias vsc="code ."

@@ -12,8 +12,9 @@ source ~/dotfiles/zsh/.history
 source ~/dotfiles/zsh/.zsh-git
 source ~/dotfiles/zsh/.zsh-theme
 source ~/dotfiles/zsh/.pomodoro
-
 source ~/dotfiles/worktrees/.wt-switch
+source ~/dotfiles/lf/scripts/lfcd.sh
+
 
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -76,3 +77,7 @@ chruby ruby-3.1.2
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
 
+
+# fnm
+export PATH="/Users/mikekey/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
