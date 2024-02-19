@@ -81,3 +81,14 @@ export PATH
 # fnm
 export PATH="/Users/mikekey/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
+
+# bun completions
+[ -s "/Users/mikekey/.bun/_bun" ] && source "/Users/mikekey/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
