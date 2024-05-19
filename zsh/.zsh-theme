@@ -139,7 +139,7 @@ if [ ! -n "${BULLETTRAIN_CUSTOM_MSG+1}" ]; then
   BULLETTRAIN_CUSTOM_MSG=default
 fi
 if [ ! -n "${BULLETTRAIN_CUSTOM_BG+1}" ]; then
-  BULLETTRAIN_CUSTOM_BG=black
+  BULLETTRAIN_CUSTOM_BG=#f1f1f1
 fi
 if [ ! -n "${BULLETTRAIN_CUSTOM_FG+1}" ]; then
   BULLETTRAIN_CUSTOM_FG=default
@@ -244,7 +244,7 @@ fi
 
 # DIR
 if [ ! -n "${BULLETTRAIN_DIR_BG+1}" ]; then
-  BULLETTRAIN_DIR_BG=blue
+  BULLETTRAIN_DIR_BG=green
 fi
 if [ ! -n "${BULLETTRAIN_DIR_FG+1}" ]; then
   BULLETTRAIN_DIR_FG=white
@@ -267,7 +267,7 @@ if [ ! -n "${BULLETTRAIN_GIT_COLORIZE_DIRTY_BG_COLOR+1}" ]; then
   BULLETTRAIN_GIT_COLORIZE_DIRTY_BG_COLOR=yellow
 fi
 if [ ! -n "${BULLETTRAIN_GIT_BG+1}" ]; then
-  BULLETTRAIN_GIT_BG=white
+  BULLETTRAIN_GIT_BG=#e0af68
 fi
 if [ ! -n "${BULLETTRAIN_GIT_FG+1}" ]; then
   BULLETTRAIN_GIT_FG=black

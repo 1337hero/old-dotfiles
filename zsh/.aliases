@@ -57,3 +57,6 @@ alias CISS="cd  ~/Sites/CISS/ && colorls"
 
 # New alias to open projects folder in VS Code
 alias vsc="code ."
+
+alias tile="yabai --start-service; skhd --start-service"
+alias tilestop="yabai --stop-service; skhd --stop-service"

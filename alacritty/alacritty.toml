@@ -1,16 +1,12 @@
 import = [
-  # uncomment the flavour you want below:
-  #"~/.config/alacritty/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin-frappe.toml"
-  # "~/.config/alacritty/catppuccin-macchiato.toml"
-  "~/.config/alacritty/catppuccin-mocha.toml"
+  "~/.config/alacritty/tokyo-night.toml"
 ]
 
 [window]
 padding = { x = 5, y = 5 }
-decorations = "Transparent"
-opacity = 0.87
-blur = true
+decorations = "Buttonless"
+opacity = 0.85
+blur = false
 
 [font]
 normal = { family = "SauceCodePro Nerd Font", style = "Regular" }
