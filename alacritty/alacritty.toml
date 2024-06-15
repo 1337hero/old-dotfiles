@@ -1,16 +1,16 @@
 import = [
-  "~/.config/alacritty/tokyo-night.toml"
+  "~/.config/alacritty/catppuccin-macchiato.toml"
 ]
 
 [window]
-padding = { x = 5, y = 5 }
-decorations = "Buttonless"
+padding = { x = 5, y = 10 }
+decorations = "Transparent"
 opacity = 0.85
 blur = false
 
 [font]
-normal = { family = "SauceCodePro Nerd Font", style = "Regular" }
-size = 18
+normal = { family = "MonoLisa", style = "Light" }
+size = 16
 
 [colors]
 

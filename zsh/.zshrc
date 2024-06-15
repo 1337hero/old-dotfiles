@@ -78,10 +78,6 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
 
 
-# fnm
-export PATH="/Users/mikekey/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
-
 # bun completions
 [ -s "/Users/mikekey/.bun/_bun" ] && source "/Users/mikekey/.bun/_bun"
 
@@ -92,3 +88,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export PKG_CONFIG_PATH="/usr/local/opt/llvm/lib/pkgconfig"
