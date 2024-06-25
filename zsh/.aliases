@@ -16,17 +16,22 @@ alias md='mkdir -p'
 alias rd='rmdir'
 
 alias home="cd ~/"
-alias sites="cd ~/Sites/"
-alias projects="cd ~/projects"
 
 alias pip=pip3
 alias python=/usr/local/bin/python3
 
 alias bci="brew cask install"
 
+alias edit-zsh="nvim ~/.zshrc"
+
+alias vim="nvim" #set default VIM to Neovim
+
 # List directory contents
 alias ll='ls -lh'
+alias ls="eza --icons=always --git-ignore --ignore-glob='node_modules'"
 alias la='ls -lAh'
+alias lla="ls -la"
+alias lt="ls -lTa"
 
 # Run ls after cd
 function cd { builtin cd "$@" && colorls }
@@ -42,7 +47,7 @@ alias gb="g branch"
 alias gsw="g switch"
 alias gt="g worktree list"
 alias gco="g checkout"
-alias gbl="g branch --List"
+alias gbl="g branch --list"
 
 alias devTime="bun run dev"
 
@@ -52,14 +57,29 @@ alias azdev="npx @azure/static-web-apps-cli start"
 alias klh="sudo lsof -i"
 alias kh="kill -9"
 
-alias sites="cd ~/Sites/ && colorls"
-alias projects="cd ~/Projects/ && colorls"
-alias dotfiles="cd ~/dotfiles/ && colorls"
+alias sites="cd ~/Sites/"
+alias projects="cd ~/Projects/"
+alias dotfiles="cd ~/dotfiles/"
 
-alias CISS="cd  ~/Sites/CISS/ && colorls"
+alias CISS="cd  ~/Sites/CISS/"
+alias SRWP="cd  ~/Sites/srwp/"
+alias ustla="cd  ~/Sites/ustla/"
 
 # New alias to open projects folder in VS Code
 alias vsc="code ."
 
 alias tile="yabai --start-service; skhd --start-service"
 alias tilestop="yabai --stop-service; skhd --stop-service"
+
+# |======  TMUX  ======|
+alias tl="tmux ls"
+alias tad="tmux attach -d -t"
+alias ta="tmux attach -d"
+alias ts="tmux new-session -s"
+alias tksv="tmux kill-server"
+alias tkss="tmux kill-session -t"
+alias tmd="tmux detach"
+alias stx="tmux source ~/.tmux.conf"
+
+# |======  Misc  ======|
+alias nf="neofetch"
