@@ -83,3 +83,4 @@ alias stx="tmux source ~/.tmux.conf"
 
 # |======  Misc  ======|
 alias nf="neofetch"
+alias sbr="sketchybar --reload"
