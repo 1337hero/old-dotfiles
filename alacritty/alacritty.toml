@@ -3,7 +3,7 @@ import = [
 ]
 
 [window]
-padding = { x = 5, y = 10 }
+padding = { x = 5, y = 20 }
 decorations = "Transparent"
 opacity = 0.85
 blur = false
