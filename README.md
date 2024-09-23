@@ -1,5 +1,1 @@
-# My Dotfiles
-
-These are my personal dotfiles
-
-Currently just focused on my terminal setup - as I finally moved away from Oh-My-ZSH which I never needed to begin with. Self customized terminal.
+This is archived version - after moving to Arch Linux - I started a new set of Dotfiles as certain Mac specific items were not cross platform, while some were. So I created a new repo and now amd combing Dotfiles.
